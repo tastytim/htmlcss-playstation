@@ -115,5 +115,23 @@
     list-style: none;
 }
 
+.dropdown-menu.show {
+    width: 100vw;
+    height: 100px;
+    border:none;
+    display: flex;
+    align-self: center;
+    left:0;
+    right:0;
+    position:absolute;
+    justify-content: center;
+    margin: 0;
+    border-radius: 0;
+}
+
+.dropdown{
+    position: static;
+}
+
 
 
