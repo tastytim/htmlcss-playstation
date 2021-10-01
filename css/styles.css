@@ -86,4 +86,33 @@
     width: 100%;
 }
 
+.container-uscite img{
+ border-radius: 12px;
+}
+
+:root .card{
+   border: transparent;
+}
+
+.container-play-plus{
+    background-color: #BEBCBB;
+}
+
+.container-play-now{
+    background-color: #161C3B;
+}
+
+.footer{
+    background-color: #00439C;
+}
+
+.global{
+    height: 16px;
+}
+
+.ul-decor ul{
+    list-style: none;
+}
+
+
 
