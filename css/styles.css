@@ -55,7 +55,7 @@
 
 
 
-.carousel .row-cols-6 .col img{
+.carousel img{
     width: 100%;
     border-radius: 20px;
     padding: 10px;
@@ -88,6 +88,7 @@
 
 .container-uscite img{
  border-radius: 12px;
+ padding:10px 0;
 }
 
 :root .card{
