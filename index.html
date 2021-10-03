@@ -4,6 +4,7 @@
     <title>Playstaition</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Bootstrap JavaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -35,10 +36,24 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Title -->
-    <title>SpotiFy</title>
+    <title>SonyPlaystation</title>
     <link rel="stylesheet" href="css/styles.css" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .caretup {
+        transform: rotate(180deg);
+      }
+    </style>
+    <script>
+      $(function () {
+        $(".dropdown-toggle")
+          .dropdown()
+          .on("show.bs.dropdown ", function () {
+            $(this).find(".dropdown-toggle::after").toggleClass("caretup");
+          });
+      });
+    </script>
   </head>
 
   <body>
@@ -73,6 +88,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
+                      <!-- knopka -->
                       <a
                         class="nav-link dropdown-toggle"
                         href="#"
@@ -80,26 +96,84 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
+                        >Giochi</a
                       >
-                        Giochi
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="navbarDropdown"
-                      >
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
 
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+                      <div class="dropdown-menu my-menu-custom text-center">
+                        <div
+                          class="
+                            container-fluid
+                            d-flex
+                            justify-content-center
+                            text-center
+                          "
+                        >
+                          <div class="row">
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 1</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 2</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 3</div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <hr class="hr-w" />
+
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Playstation indies</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Promozioni e offerte</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Playstation hits</span
+                                    >
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                     <li class="nav-item dropdown">
+                      <!-- knopka -->
                       <a
                         class="nav-link dropdown-toggle"
                         href="#"
@@ -107,26 +181,84 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
+                        >Hardware</a
                       >
-                        Hardware
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="navbarDropdown"
-                      >
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
 
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+                      <div class="dropdown-menu my-menu-custom text-center">
+                        <div
+                          class="
+                            container-fluid
+                            d-flex
+                            justify-content-center
+                            text-center
+                          "
+                        >
+                          <div class="row">
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 1</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 2</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 3</div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <hr class="hr-w" />
+
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Playstation indies</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Promozioni e offerte</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Playstation hits</span
+                                    >
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                     <li class="nav-item dropdown">
+                      <!-- knopka -->
                       <a
                         class="nav-link dropdown-toggle"
                         href="#"
@@ -134,26 +266,84 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
+                        >Servizi</a
                       >
-                        Servizi
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="navbarDropdown"
-                      >
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
 
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+                      <div class="dropdown-menu my-menu-custom text-center">
+                        <div
+                          class="
+                            container-fluid
+                            d-flex
+                            justify-content-center
+                            text-center
+                          "
+                        >
+                          <div class="row">
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 1</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 2</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 3</div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <hr class="hr-w" />
+
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Playstation indies</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Promozioni e offerte</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Playstation hits</span
+                                    >
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                     <li class="nav-item dropdown">
+                      <!-- knopka -->
                       <a
                         class="nav-link dropdown-toggle"
                         href="#"
@@ -161,26 +351,84 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
+                        >Novita</a
                       >
-                        Novita
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="navbarDropdown"
-                      >
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
 
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+                      <div class="dropdown-menu my-menu-custom text-center">
+                        <div
+                          class="
+                            container-fluid
+                            d-flex
+                            justify-content-center
+                            text-center
+                          "
+                        >
+                          <div class="row">
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 1</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 2</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 3</div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <hr class="hr-w" />
+
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Playstation indies</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Promozioni e offerte</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Playstation hits</span
+                                    >
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                     <li class="nav-item dropdown">
+                      <!-- knopka -->
                       <a
                         class="nav-link dropdown-toggle"
                         href="#"
@@ -188,26 +436,84 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
+                        >Fai acquisti</a
                       >
-                        Fai acquisti
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="navbarDropdown"
-                      >
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
 
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+                      <div class="dropdown-menu my-menu-custom text-center">
+                        <div
+                          class="
+                            container-fluid
+                            d-flex
+                            justify-content-center
+                            text-center
+                          "
+                        >
+                          <div class="row">
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 1</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 2</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 3</div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <hr class="hr-w" />
+
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Playstation indies</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Promozioni e offerte</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Playstation hits</span
+                                    >
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                     <li class="nav-item dropdown">
+                      <!-- knopka -->
                       <a
                         class="nav-link dropdown-toggle"
                         href="#"
@@ -215,29 +521,88 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
+                        >Supporto</a
                       >
-                        Supporto
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="navbarDropdown"
-                      >
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+
+                      <div class="dropdown-menu my-menu-custom text-center">
+                        <div
+                          class="
+                            container-fluid
+                            d-flex
+                            justify-content-center
+                            text-center
+                          "
+                        >
+                          <div class="row">
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 1</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 2</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 3</div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <hr class="hr-w" />
+
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Playstation indies</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Promozioni e offerte</span
+                                    >
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    class="dropdown-item position-relative"
+                                    href="#"
+                                  >
+                                    <span class="blue-text-ball"
+                                      >Playstation hits</span
+                                    >
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                   </ul>
 
                   <!-- MENU RIGHT-PART -->
                   <ul class="navbar-nav d-flex">
                     <li class="nav-item dropdown">
+                      <!-- knopka -->
                       <a
                         class="nav-link dropdown-toggle"
                         href="#"
@@ -245,35 +610,58 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
+                        >My Playstation</a
                       >
-                        My PlayStation
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="navbarDropdown"
-                      >
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"></a></li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+
+                      <div class="dropdown-menu my-menu-custom text-center">
+                        <div
+                          class="
+                            container-fluid
+                            d-flex
+                            justify-content-center
+                            text-center
+                          "
+                        >
+                          <div class="row">
+                            <div class="d-flex justify-content-center">
+                              <ul class="d-flex">
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 1</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 2</div>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="" />
+                                    <div>Link 3</div>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                   </ul>
+                  <div class="d-inline hov-white">
+                    <button
+                      class="btn btn-dark rounded-pill btn-hover"
+                      type="submit"
+                    >
+                      Accedi<span
+                        type="button"
+                        class="btn rounded-pill btn-hover-white"
+                      ></span>
+                    </button>
+                  </div>
 
-                  <button class="btn btn-dark rounded-pill" type="submit">
-                    Accedi
-                  </button>
                   <i class="fas fa-search"></i>
                 </div>
               </div>
@@ -294,9 +682,17 @@
                       innovativa, ora ampliata e rimasterizzata per PS5.
                     </p>
                     <div class="py-3">
-                      <button type="button" class="btn btn-danger rounded-pill">
-                        Acquista ora
-                      </button>
+                      <div class="hov-white">
+                        <button
+                          type="button"
+                          class="btn btn-danger rounded-pill btn-hover"
+                        >
+                          Acquista ora<span
+                            type="button"
+                            class="btn rounded-pill btn-hover-white"
+                          ></span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -361,26 +757,31 @@
       </div>
 
       <!-- Ecco la Play-5 -->
-      <div class="container text-center py-5">
+      <div class="container text-center px-0 py-5">
         <a class="text-decoration-none fw-bold" ref="#">PLAY HAS NO LIMITS</a>
         <h1>Ecco la Playstation 5</h1>
         <p>Tuffati in nuove possibilita di gioco completamente inaspettate</p>
         <!-- Console Play -->
         <div class="container pt-5">
           <div class="row row-cols-1 row-cols-md-2 m-0">
-            <div class="col position-relative p-0 text-start py-5">
-              <div class="position-absolute top-50 start-0 translate-middle-y">
+            <div class="col position-relative px-0 text-start py-5">
+              <div class="position-relative top-50 start-0 translate-middle-y">
                 <h1 class="py-2">Console Playstation 5</h1>
                 <p class="py-2">
                   Sperimenta la nuova generazione di incredibili giochi
                   Playstation
                 </p>
-                <button type="button" class="btn btn-primary rounded-pill m-0">
-                  Maggiori informazioni
-                </button>
+                <div class="hov-white py-2">
+                  <button type="button" class="btn btn-primary rounded-pill">
+                    Maggiori informazioni<span
+                      type="button"
+                      class="btn rounded-pill btn-hover-white"
+                    ></span>
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="col p-0 position-relative py-5">
+            <div class="col px-0 position-relative py-5">
               <img
                 class="w-100"
                 src="img/playstation-5-thumb.png"
@@ -445,9 +846,18 @@
                   cooperativa a piattaforme che stravolge il suo genere
                 </p>
                 <div class="py-3">
-                  <button type="button" class="btn btn-danger rounded-pill">
-                    Acquista ora
-                  </button>
+                  <div class="hov-white">
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill btn-hover"
+                    >
+                      Acquista ora
+                      <span
+                        type="button"
+                        class="btn rounded-pill btn-hover-white"
+                      ></span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -594,9 +1004,24 @@
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a href="#" class="btn btn-primary rounded-pill"
-                      >Scopri di piu</a
-                    >
+                    <div class="hov-white">
+                      <a
+                        href="#"
+                        class="
+                          btn btn-primary
+                          rounded-pill
+                          position-relative
+                          justify-content-center
+                          text-center
+                        "
+                      >
+                        <span
+                          type="button"
+                          class="btn rounded-pill btn-hover-white"
+                        ></span>
+                        Scopri di piu
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -613,9 +1038,24 @@
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a href="#" class="btn btn-primary rounded-pill"
-                      >Scopri di piu</a
-                    >
+                    <div class="hov-white">
+                      <a
+                        href="#"
+                        class="
+                          btn btn-primary
+                          rounded-pill
+                          position-relative
+                          justify-content-center
+                          text-center
+                        "
+                      >
+                        Scopri di piu
+                        <span
+                          type="button"
+                          class="btn rounded-pill btn-hover-white"
+                        ></span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -632,9 +1072,18 @@
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a href="#" class="btn btn-primary rounded-pill"
-                      >Scopri di piu</a
-                    >
+
+                    <div class="hov-white justify-content-center">
+                      <a
+                        href="#"
+                        class="btn btn-primary rounded-pill position-relative"
+                      >
+                        Scopri di piu<span
+                          type="button"
+                          class="btn rounded-pill btn-hover-white"
+                        ></span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -655,9 +1104,19 @@
                 multigiocatore online, giochi mensili, sconti esclusivi e altro
                 ancora
               </p>
-              <button type="button" class="btn btn-light rounded-pill">
-                Esplora Playstation Plus
-              </button>
+              <div class="hov-black">
+                <button
+                  type="button"
+                  class="btn btn-light rounded-pill position-relative"
+                >
+                  Esplora Playstation Plus
+
+                  <span
+                    type="button"
+                    class="btn rounded-pill btn-hover-black"
+                  ></span>
+                </button>
+              </div>
             </div>
             <div class="col d-none d-md-inline">
               <img
@@ -724,9 +1183,25 @@
                 Ottieni l'accesso immediato a una vastissima raccolta di oltre
                 800 giochi per PS$, PS3 e PS2 su PS$ o PC Windows, con
               </p>
-              <button type="button" class="btn btn-light rounded-pill">
-                Esplora Playstation Now
-              </button>
+              <div class="hov-black justify-content-center">
+                <button
+                  type="button"
+                  class="
+                    btn btn-light
+                    rounded-pill
+                    position-relative
+                    justify-content-center
+                    text-center
+                  "
+                >
+                  Esplora Playstation Now
+
+                  <span
+                    type="button"
+                    class="btn rounded-pill btn-hover-black"
+                  ></span>
+                </button>
+              </div>
             </div>
             <div class="col d-none d-md-inline">
               <img
