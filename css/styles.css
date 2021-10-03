@@ -114,6 +114,16 @@
 .ul-decor ul {
   list-style: none;
 }
+.navbar-nav .dropdown-menu{
+    border: none;
+}
+.navbar-nav .dropdown-menu ul{
+    list-style: none;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+  }
 
 
 
