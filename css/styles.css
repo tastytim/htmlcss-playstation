@@ -21,11 +21,21 @@
 .navbar-light .navbar-nav .nav-link {
   color: black;
 }
+.returnal {
+  background: url("../img/jumbo-bg.png");
+}
+
+.death {
+  background: url("../playstation-reponsive/death-stranding-320px.jpg");
+}
+
+.fifa {
+  background: url("../playstation-reponsive/fifa-22-hero-banner-mobile-320px.jpg");
+}
 
 .hero-container {
   position: relative;
   width: 100%;
-  background: url("../img/jumbo-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,6 +115,9 @@
   list-style: none;
 }
 
+
+
+
 /* BTN DECOR */
 
 .btn {
@@ -149,52 +162,62 @@
   opacity: 0.5;
 }
 
-
 .hov-2:hover img {
   opacity: 1;
   transform: scale(120%);
   overflow: hidden;
 }
 
-
 .hov-2:hover p {
   display: none;
 }
 
-
-
 /* ROTATE EFFECT */
 
-.container-uscite .col:hover img{
-    animation: rotating 1s linear;
+.container-uscite .col:hover img {
+  animation: rotating 1s linear;
 }
 
 @keyframes rotating {
-    0% {
-        transform: rotatey(0deg);
-      }
-      100% {
-        transform: rotatey(360deg);
-      }
-    
+  0% {
+    transform: rotatey(0deg);
+  }
+  100% {
+    transform: rotatey(360deg);
+  }
 }
-
 
 /* BTN EFFECT UP */
 
-
-.carousel .hov{
-    bottom:0;
-    transition: bottom 0.15s ease-in 100ms ;
+.carousel .hov {
+  bottom: 0;
+  transition: bottom 0.15s ease-in 100ms;
 }
-.carousel .col:hover .hov{
-   bottom:20px;
+.carousel .col:hover .hov {
+  bottom: 20px;
 }
-
-
-
 
 /* MEDIA LARGE */
+
+@media screen and (min-width: 768px) {
+  .death {
+    background: url("../playstation-reponsive/death-stranding-1024px.jpg");
+  }
+
+  .fifa {
+    background: url("../playstation-reponsive/fifa-22-hero-1024px.jpg");
+  }
+
+  .hero-container {
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* CHANGE BOOTSRAP MENU FROM LG */
 
 @media screen and (min-width: 992px) {
   .navbar-expand-lg .dropdown-menu.show {
@@ -254,5 +277,23 @@
 
   .navbar-nav a {
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .death {
+    background: url("../playstation-reponsive/death-stranding-1400px.jpg");
+  }
+
+  .fifa {
+    background: url("../playstation-reponsive/fifa-22-hero-1367px.jpg");
+  }
+
+  .hero-container {
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
