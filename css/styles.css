@@ -59,7 +59,11 @@
 .carousel img {
   width: 100%;
   border-radius: 20px;
-  padding: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  display: none;
 }
 
 .btn-modified-2 {
@@ -72,6 +76,7 @@
   background: transparent;
   border: 3px solid blue;
   border-radius: 12px;
+  padding: 2px;
 }
 
 .hov {
@@ -125,8 +130,9 @@
     background-color: transparent;
   }
 
-
-
+  .dropdown-toggle[aria-expanded="true"]:after {
+    transform: rotate(180deg);
+  }
 
 /* BTN DECOR */
 
