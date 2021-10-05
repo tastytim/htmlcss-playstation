@@ -199,6 +199,10 @@
   animation: rotating 1s linear;
 }
 
+.height-20{
+  height: 20px;
+}
+
 @keyframes rotating {
   0% {
     transform: rotatey(0deg);
